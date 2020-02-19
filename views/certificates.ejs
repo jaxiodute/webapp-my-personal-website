@@ -1,0 +1,16 @@
+<%- include("constants/header"); -%>
+<div class="row">
+  <%for(var i=0;i<certificatecontent.length;i++){%>
+  <div class="col-lg-6">
+    <div class="container" style="border:2px solid black;border-radius:25px;box-shadow: 10px 5px 5px black;">
+      <br>
+      <h5 class="card-title"><%=certificatecontent[i].title%></h5><span><b>Status:</b><%=certificatecontent[i].status%></span>
+<p class="card-text"><%=certificatecontent[i].about%></p>
+<%var k=certificatecontent[i].credential%>
+<%console.log(k)%>
+<a href="/<%=k%>" class="btn btn-primary">See the credentials</a>
+<br><br>
+    </div>
+  </div>
+  <% }%>
+  </div>

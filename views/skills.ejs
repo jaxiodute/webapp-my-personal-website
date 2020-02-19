@@ -1,0 +1,17 @@
+<%- include("constants/header"); -%>
+
+<div class="row">
+  <%for(var i=0;i<skillcontent.length;i++){%>
+  <div class="col-lg-4">
+    <div class="container" style="border:2px solid black;border-radius:25px;box-shadow: 10px 5px 5px black;">
+      <br>
+      <h5 class="card-title"><%=skillcontent[i].title%></h5>
+      <div class="progress">
+        <%var k= skillcontent[i].progress%>
+  <div class="progress-bar" role="progressbar" style="width: <%=k%>%;" aria-valuenow="<%=k%>" aria-valuemin="0" aria-valuemax="100"><%=k%>%</div>
+</div>
+<br><br>
+    </div>
+  </div>
+<%}%>
+  </div>

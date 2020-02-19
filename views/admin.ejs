@@ -1,0 +1,112 @@
+<h1>Home</h1>
+<form  action="/home" method="post">
+  <div class="form-group">
+    <label>Main Role</label>
+    <input type="text" class="form-control" placeholder="Student/Worker" name="mainrole">
+  </div>
+  <div class="form-group">
+    <label>Main Role Content</label>
+    <input type="text" class="form-control" placeholder="I am studying here ...." name="mainrolecontent">
+  </div>
+  <div class="form-group">
+    <label>Todays Activity Content </label>
+    <input type="text" class="form-control" placeholder="Today i THINK OF ...." name="todaycontent">
+  </div>
+  <div class="form-group">
+    <label>Current Working Tech Content </label>
+    <input type="text" class="form-control" placeholder="Currently am studying as a ...." name="currenttech">
+  </div>
+<button type="submit" class="btn" name="button">Update</button>
+</form>
+
+<h1>Add certificate</h1>
+<form method="post" action="/addcertificate">
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" placeholder="Flutter /android..." name="title">
+  </div>
+  <div class="form-group">
+    <label>About the course</label>
+    <input type="text" class="form-control" placeholder="this course is about ... ...." name="about">
+  </div>
+  <div class="form-group">
+    <label>credential link </label>
+    <input type="text" class="form-control" placeholder="http github.. ...." name="credential">
+  </div>
+  <div class="form-group">
+    <label>status</label>
+    <input type="text" class="form-control" placeholder="http github.. ...." name="status">
+  </div>
+<button type="submit" class="btn" name="button">Add to certificate</button>
+</form>
+
+<h1>delete certificate</h1>
+<form method="post" action="/deletecertificate">
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" placeholder="Flutter /android..." name="title">
+  </div>
+<button type="submit" class="btn" name="button">delete this certificate</button>
+</form>
+<h1>Add Projects</h1>
+<form method="post" action="/addproject">
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" placeholder="Flutter /android..." name="title">
+  </div>
+  <div class="form-group">
+    <label>About the project</label>
+    <input type="text" class="form-control" placeholder="this course is about ... ...." name="about">
+  </div>
+  <div class="form-group">
+    <label>sourcecode link </label>
+    <input type="text" class="form-control" placeholder="http github.. ...." name="sourcecode">
+  </div>
+<button type="submit" class="btn" name="button">Add to project</button>
+</form>
+
+<h1>delete project</h1>
+<form action="/deleteproject" method="post">
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" placeholder="Flutter /android..." name="title">
+  </div>
+<button type="submit" class="btn" name="button">delete this project</button>
+</form>
+<h1>Add About</h1>
+<form>
+  <div class="form-group">
+    <label>What u wanna add</label>
+    <input type="text" class="form-control" placeholder="name...">
+  </div>
+<button type="submit" class="btn" name="button">Add this to About</button>
+</form>
+<h1>Delete About</h1>
+<form>
+  <div class="form-group">
+    <label>What u wanna delete</label>
+    <input type="text" class="form-control" placeholder="Flutter /android...">
+  </div>
+<button type="submit" class="btn" name="button">delete this project</button>
+</form>
+
+<h1>Add Skills</h1>
+<form method="post" action="/addskill">
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" placeholder="Flutter /android..." name="title">
+  </div>
+  <div class="form-group">
+    <label>progress</label>
+    <input type="text" class="form-control" placeholder="89..." name="progress">
+  </div>
+<button type="submit" class="btn" name="button">Add this to skills</button>
+</form>
+<h1>delete skills</h1>
+<form method="post" action="/deleteskill">
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" placeholder="Flutter /android..." name="title">
+  </div>
+<button type="submit" class="btn" name="button">Delete this from skills</button>
+</form>
